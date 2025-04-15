@@ -1,5 +1,10 @@
 package BCodes.java_8_features;
 
+import java.time.Clock;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Optional;
 import java.util.function.Supplier;
 
@@ -12,6 +17,20 @@ public class App implements SampleInterface
 		
     public static void main( String[] args )
     {
+//    	LocalDate localDate = LocalDate.now(Clock.system(ZoneId.of("Asia/Colombo"))); 
+//    	System.out.println(localDate);
+    	LocalDate today = LocalDate.now();
+    	System.out.println("Today's date is "+ today.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+//    	LocalDate tomorrow = today.plusDays(1);
+//    	LocalDate yesterday = today.minusDays(1);
+//    	System.out.println(yesterday);
+//    	System.out.println(today);
+//    	System.out.println(tomorrow);
+//    	System.out.println("Today the date is "+today);
+//    	LocalTime clockTime = LocalTime.now();
+//    	System.out.println("Today the time is "+clockTime);
+//    	LocalDate clockDate = LocalDate.now(Clock.systemDefaultZone());
+//    	System.out.println("Clock date is "+ clockDate);
 //    	Optional<String> optionalName = Optional.ofNullable(null);
 //    	optionalName.ifPresentOrElse(System.out::println,() -> System.out.println("Testing Null Value"));
 //    	App app = new App();
