@@ -1,12 +1,17 @@
 package BCodes.java_8_features;
 
 import java.time.Clock;
+import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Month;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Optional;
 import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 /**
  * Hello world!
@@ -19,8 +24,26 @@ public class App implements SampleInterface
     {
 //    	LocalDate localDate = LocalDate.now(Clock.system(ZoneId.of("Asia/Colombo"))); 
 //    	System.out.println(localDate);
-    	LocalDate today = LocalDate.now();
-    	System.out.println("Today's date is "+ today.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+//    	LocalDate today = LocalDate.now();
+//    	DayOfWeek dayOfWeek = today.getDayOfWeek();
+//    	System.out.println("Day of Week "+dayOfWeek);
+//    	LocalDate test = LocalDate.of(2025, 4, 30);
+//    	long daysBetween = ChronoUnit.DAYS.between(today, test);
+//    	System.out.println("Days between "+daysBetween);
+//    	Stream.iterate(today, date -> date.plusDays(1))
+//    	.limit(5).forEach(System.out::println);
+//    	LocalDate deadline = LocalDate.of(2025, 12, 31);
+//    	boolean isBeforeDeadline = today.isBefore(deadline);
+//    	boolean isAfterDeadline = today.isAfter(deadline);
+//    	System.out.println("Is Before Deadline "+isBeforeDeadline);
+//    	System.out.println("Is After Deadline "+isAfterDeadline);
+//    	int year = today.getYear();
+//    	int month = today.getMonthValue();
+//    	int day = today.getDayOfMonth();
+//    	System.out.println("Year "+year);
+//    	System.out.println("Month "+month);
+//    	System.out.println("Day "+day);
+//    	System.out.println("Today's date is "+ today.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 //    	LocalDate tomorrow = today.plusDays(1);
 //    	LocalDate yesterday = today.minusDays(1);
 //    	System.out.println(yesterday);
