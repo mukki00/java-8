@@ -2,8 +2,7 @@ package BCodes.java_8_features;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 /**
  * Hello world!
@@ -28,7 +27,7 @@ public class App
 //    	List<Integer> numbers = Arrays.asList(1,2,3,4,5);
 //    	int result = numbers.stream().reduce(1, (a,b) -> a*b);
 //    	System.out.println(result);
-    	List<String> techStacks = Arrays.asList("Angular","Vue","React","Svelte","JAVA","PHP","NODE","ANDROID");
+//    	List<String> techStacks = Arrays.asList("Angular","Vue","React","Svelte","JAVA","PHP","NODE","ANDROID");
 //    	String[] techStackArray = techStacks.stream().toArray(String[]::new);
 //    	System.out.println(Arrays.toString(techStackArray));
 //    	boolean isStartingWithA = techStacks.stream().anyMatch((ele) -> ele.startsWith("A"));
@@ -53,5 +52,19 @@ public class App
 //    	maxEle.ifPresent(System.out::println);
 //    	Optional<String> minEle = techStacks.stream().min((a,b) -> a.length() - b.length());
 //    	minEle.ifPresent(System.out::println);
+    	
+    	List<Integer> numbers = Arrays.asList(2,3,5,3,4,5,6,7,7,8,9);
+//    	numbers.stream().filter(number -> number%2 ==0).forEach(System.out::println);
+//    	numbers.stream().map(number -> number *10).forEach(System.out::println);
+//    	List<Integer> altNumbers = Arrays.asList(4,3,2,1);
+//    	List<List<Integer>> listOfNumbers = Arrays.asList(numbers,altNumbers);
+//    	listOfNumbers.stream().flatMap(list -> list.stream().filter(number -> number%2 ==1)).forEach(System.out::println);
+//    	numbers.stream().distinct().forEach(System.out::println);
+//    	numbers.stream().sorted().forEach(System.out::println);
+//    	numbers.stream().sorted((a,b) -> b-a).forEach(System.out::println);
+//    	numbers.stream().limit(3).forEach(System.out::println);
+//    	numbers.stream().skip(3).forEach(System.out::println);
+//    	numbers.stream().peek(number -> System.out.println("Processing: "+number)).filter(number -> number%2 == 0)
+//    	.forEach(System.out::println);
     }
 }
