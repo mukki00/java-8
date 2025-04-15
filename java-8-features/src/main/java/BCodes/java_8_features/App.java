@@ -1,20 +1,9 @@
 package BCodes.java_8_features;
 
-import java.time.Clock;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
+import java.beans.Customizer;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.function.Supplier;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import java.util.Spliterator;
+import java.util.concurrent.CompletableFuture;
 
 /**
  * Hello world!
@@ -25,8 +14,17 @@ public class App implements SampleInterface
 		
     public static void main( String[] args )
     {
-    	List<String> backendTechnologies = Arrays.asList("Node","Laravel","Spring","SpringBoot");
     	
+    	
+//    	CompletableFuture<Void> completableFuture = CompletableFuture
+//    			.supplyAsync(() -> "Step 1")
+//    			.thenApply(result -> result+" Step 2")
+//    			.thenAccept(System.out::println);
+//    	completableFuture.join();
+//    	List<String> backendTechnologies = Arrays.asList("Node","Laravel","Spring","SpringBoot");
+//    	backendTechnologies.stream()
+//    	.collect(Collectors.groupingBy(technology -> technology.charAt(0)))
+//    	.forEach((key,value) -> System.out.println("key "+value));
 //    	IntStream.range(0, backendTechnologies.size()).forEach(i -> System.out.println(i+" "+backendTechnologies.get(i)));
 //    	LocalDate localDate = LocalDate.now(Clock.system(ZoneId.of("Asia/Colombo"))); 
 //    	System.out.println(localDate);
