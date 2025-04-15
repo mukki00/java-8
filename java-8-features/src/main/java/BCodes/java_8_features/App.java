@@ -1,8 +1,6 @@
 package BCodes.java_8_features;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.function.Supplier;
 
 /**
  * Hello world!
@@ -53,7 +51,7 @@ public class App
 //    	Optional<String> minEle = techStacks.stream().min((a,b) -> a.length() - b.length());
 //    	minEle.ifPresent(System.out::println);
     	
-    	List<Integer> numbers = Arrays.asList(2,3,5,3,4,5,6,7,7,8,9);
+//    	List<Integer> numbers = Arrays.asList(2,3,5,3,4,5,6,7,7,8,9);
 //    	numbers.stream().filter(number -> number%2 ==0).forEach(System.out::println);
 //    	numbers.stream().map(number -> number *10).forEach(System.out::println);
 //    	List<Integer> altNumbers = Arrays.asList(4,3,2,1);
@@ -66,5 +64,22 @@ public class App
 //    	numbers.stream().skip(3).forEach(System.out::println);
 //    	numbers.stream().peek(number -> System.out.println("Processing: "+number)).filter(number -> number%2 == 0)
 //    	.forEach(System.out::println);
+    	
+//    	Function<String,Integer> convertToInt = Integer::parseInt;
+//    	System.out.println("converted string "+convertToInt.apply("7"));
+    	
+//    	String greetBCoder = "Hello! BCoders";
+//    	Consumer<String> bCodersGreeting = System.out::println;
+//    	bCodersGreeting.accept(greetBCoder);
+    	
+//    	List<String> techStacks = Arrays.asList("Angular", "Vue", "React");
+//    	techStacks.stream().map(String::toUpperCase).forEach(ele -> System.out.println(ele));
+//    	Supplier<StringBuilder> constructStringBuilder = StringBuilder::new;
+//    	StringBuilder sb = constructStringBuilder.get();
+//    	sb.append("Sample text");
+//    	System.out.println("StringBuilder output "+sb);
+    	
     }
+    
+    
 }
