@@ -1,16 +1,22 @@
 package BCodes.java_8_features;
 
+import java.util.Optional;
 import java.util.function.Supplier;
 
 /**
  * Hello world!
  *
  */
-public class App
+public class App implements SampleInterface
 {
 		
     public static void main( String[] args )
     {
+//    	Optional<String> optionalName = Optional.ofNullable(null);
+//    	optionalName.ifPresentOrElse(System.out::println,() -> System.out.println("Testing Null Value"));
+//    	App app = new App();
+//    	app.printMessage();
+//    	SampleInterface.printStatic();
     	//Streams API
 //    	List<String> techStacks = Arrays.asList("Angular","Vue","React","Svelte","JAVA","PHP","NODE","ANDROID");
 //    	techStacks.stream().filter(nameOfTheStack -> nameOfTheStack.startsWith("A")).forEach(System.out::println);
