@@ -9,8 +9,11 @@ import java.time.Month;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -22,6 +25,9 @@ public class App implements SampleInterface
 		
     public static void main( String[] args )
     {
+    	List<String> backendTechnologies = Arrays.asList("Node","Laravel","Spring","SpringBoot");
+    	
+//    	IntStream.range(0, backendTechnologies.size()).forEach(i -> System.out.println(i+" "+backendTechnologies.get(i)));
 //    	LocalDate localDate = LocalDate.now(Clock.system(ZoneId.of("Asia/Colombo"))); 
 //    	System.out.println(localDate);
 //    	LocalDate today = LocalDate.now();
